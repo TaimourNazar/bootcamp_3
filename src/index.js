@@ -4,10 +4,14 @@ import './index.css';
 import App from './App';
 import * as serviceWorker from './serviceWorker';
 
+/*ReactDOM.render(
+  //React.createElement('div',null,"Hello World with create Element"),
+  React.createElement('div',null,React.createElement('div',null,"Hello in span create Element")),
+  document.getElementById('root')
+);*/
+
 ReactDOM.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>,
+  <div><App name="Your Name" age={25}/></div>,
   document.getElementById('root')
 );
 
