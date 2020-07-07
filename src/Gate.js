@@ -2,7 +2,7 @@ import React from 'react';
 
 function Gate({isOpen}) {
 return <div>
-            <h3>Gate: {isOpen==true?"Open":"Closed"}</h3>
+            <h3>Gate: {isOpen===true?"Open":"Closed"}</h3>
        </div>
 }
 
