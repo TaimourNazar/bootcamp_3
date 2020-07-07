@@ -2,7 +2,10 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
+import MediaCard from './MediaCard';
+import Gate from './Gate';
 import * as serviceWorker from './serviceWorker';
+import pic_field from './field.jpg';
 
 /*ReactDOM.render(
   //React.createElement('div',null,"Hello World with create Element"),
@@ -11,7 +14,11 @@ import * as serviceWorker from './serviceWorker';
 );*/
 
 ReactDOM.render(
-  <div><App name="Your Name" age={25}/></div>,
+  <div>
+    <App name="Robin Hood" age={25}/>
+    <MediaCard title="Displaying Media Card" body="This is Media Card. It shows an image with description" imageUrl={pic_field}/>
+    <Gate isOpen={false}/>
+  </div>,
   document.getElementById('root')
 );
 
